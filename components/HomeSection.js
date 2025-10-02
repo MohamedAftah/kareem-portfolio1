@@ -29,21 +29,21 @@ const icons = [
     label: "Gmail",
     icon: <MdEmail />,
   },
-  {
-    href: "https://t.me/Mohdali40",
-    label: "Telegram",
-    icon: <FaTelegramPlane />,
-  },
-  {
-    href: "https://www.facebook.com/share/16u8X34dvZ/",
-    label: "Facebook",
-    icon: <FaFacebookF />,
-  },
-  {
-    href: "https://wa.me/qr/UNLGF5EH3J7XD1",
-    label: "WhatsApp",
-    icon: <FaWhatsapp />,
-  },
+  // {
+  //   href: "https://t.me/Mohdali40",
+  //   label: "Telegram",
+  //   icon: <FaTelegramPlane />,
+  // },
+  // {
+  //   href: "https://www.facebook.com/share/16u8X34dvZ/",
+  //   label: "Facebook",
+  //   icon: <FaFacebookF />,
+  // },
+  // {
+  //   href: "https://wa.me/qr/UNLGF5EH3J7XD1",
+  //   label: "WhatsApp",
+  //   icon: <FaWhatsapp />,
+  // },
 ];
 
 const jobTitles = [
