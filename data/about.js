@@ -4,7 +4,7 @@ const about = {
   email: "kareemimrahim@gmail.com",
   linkedin: "https://www.linkedin.com/in/kareem-ibrahim-mahmoud-98b23626a/",
   github: "https://github.com/Kareem-Ibrahim-Mahmoud",
-  whatsapp: "https://wa.me/201011632673"
+  whatsapp: "https://wa.me/201011632673",
 };
 
 export default about;

@@ -25,7 +25,7 @@ export default function Navbar() {
       <div className={styles.navContent}>
         <div className={styles.logo}>
           <span className={styles.logoIcon}>{"</>"}</span>
-          <span className={styles.logoText}>MoAli</span>
+          <span className={styles.logoText}>K.Ibrahim</span>
         </div>
         <button
           className={styles.laptopToggle}
@@ -38,17 +38,19 @@ export default function Navbar() {
         <ul className={`${styles.links} ${menuOpen ? styles.showMenu : ""}`}>
           {navLinks.map((link) => (
             <li key={link.href}>
-              <a
-                href={link.href}
-                onClick={() => setMenuOpen(false)}
-              >
+              <a href={link.href} onClick={() => setMenuOpen(false)}>
                 {link.label}
               </a>
             </li>
           ))}
         </ul>
       </div>
-      {menuOpen && <div className={styles.overlay} onClick={() => setMenuOpen(false)}></div>}
+      {menuOpen && (
+        <div
+          className={styles.overlay}
+          onClick={() => setMenuOpen(false)}
+        ></div>
+      )}
     </nav>
   );
 }

@@ -1,42 +1,49 @@
 "use client";
-import styles from '../styles/HomeSection.module.css';
-import { useState, useEffect } from 'react';
+import styles from "../styles/HomeSection.module.css";
+import { useState, useEffect } from "react";
 
 // Import FontAwesome icons from react-icons
-import { FaGithub, FaLinkedinIn, FaTelegramPlane, FaFacebookF, FaWhatsapp, FaBehance } from "react-icons/fa";
+import {
+  FaGithub,
+  FaLinkedinIn,
+  FaTelegramPlane,
+  FaFacebookF,
+  FaWhatsapp,
+  FaBehance,
+} from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 
 const icons = [
   {
     href: "https://github.com/Kareem-Ibrahim-Mahmoud",
     label: "GitHub",
-    icon: <FaGithub />
+    icon: <FaGithub />,
   },
   {
     href: "https://www.linkedin.com/in/kareem-ibrahim-mahmoud-98b23626a/",
     label: "LinkedIn",
-    icon: <FaLinkedinIn />
+    icon: <FaLinkedinIn />,
   },
   {
     href: "mailto:kareemimrahim@gmail.com",
     label: "Gmail",
-    icon: <MdEmail />
+    icon: <MdEmail />,
   },
   {
     href: "https://t.me/Mohdali40",
     label: "Telegram",
-    icon: <FaTelegramPlane />
+    icon: <FaTelegramPlane />,
   },
   {
     href: "https://www.facebook.com/share/16u8X34dvZ/",
     label: "Facebook",
-    icon: <FaFacebookF />
+    icon: <FaFacebookF />,
   },
   {
     href: "https://wa.me/qr/UNLGF5EH3J7XD1",
     label: "WhatsApp",
-    icon: <FaWhatsapp />
-  }
+    icon: <FaWhatsapp />,
+  },
 ];
 
 const jobTitles = [
@@ -46,7 +53,7 @@ const jobTitles = [
 ];
 
 export default function HomeSection() {
-  const [typedText, setTypedText] = useState('');
+  const [typedText, setTypedText] = useState("");
   const [currentTitle, setCurrentTitle] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
   const [loading, setLoading] = useState(true);
@@ -96,13 +103,13 @@ export default function HomeSection() {
           className={styles.profileImg}
         />
         <div className={styles.infoBlock}>
-          <h1 className={styles.title}>Mohamed Ali Ahmed</h1>
+          <h1 className={styles.title}>Kareem Ibrahim</h1>
           <div className={styles.typingWrapper}>
             <span className={styles.typing}>{typedText}</span>
             <span className={styles.cursor}>|</span>
           </div>
           <div className={styles.socialIcons}>
-            {icons.map(icon => (
+            {icons.map((icon) => (
               <a
                 href={icon.href}
                 key={icon.label}
@@ -115,7 +122,11 @@ export default function HomeSection() {
               </a>
             ))}
           </div>
-          <a href="/Kareem Ibrahim Mahmoud.pdf" download className={styles.downloadBtn}>
+          <a
+            href="/Kareem Ibrahim Mahmoud.pdf"
+            download
+            className={styles.downloadBtn}
+          >
             Download CV (PDF)
           </a>
         </div>
